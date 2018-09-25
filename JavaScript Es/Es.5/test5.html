@@ -1,0 +1,73 @@
+<!-- 
+Visibilità prodotto : 
+    isActive                false   true        true
+    isInStock               true    true        false
+    isWarehouseClose        true    true        true
+Dati prodotto:
+    name                    Pizza   Piadina     Kebab
+    price                   8       5           4.5
+    qty                     10      30          20
+Dati generici: 
+    taxRate                 21      21          21
+    shippingPrice           1       0.5         0.5
+Tre box a frontend:
+____________________|____________________|____________________|
+IMMAGINE DELLA      |IMMAGINE DELLA      |IMMAGINE DEL        |
+PIZZA               |PIADINA             |KEBAB               |
+                    |                    |                    |
+quantità della      |quantità della      |quantità del        |
+Pizza               |Piadina             |Kebab               |
+                    |                    |                    |
+Button acquista     |Button acquista     |Button acquista     |
+                    |                    |                    |
+____________________|____________________|____________________|
+<input id="pizza" type="number"/>
+<input id="piadina" type="number"/>
+<input id="kebab" type="number"/>
+<script type="text/javascript">
+    function getData(productName) {
+        return document.getElementById(productName).value;
+    }
+</script>
+
+ -->
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pagina</title>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">
+            <img src="media/pizza.png" alt="">
+            <label for="">Quantita 
+                <input id="pizza" type="number">
+            </label>
+            <button onclick="getData('pizza')">BUY</button>
+        </div>
+        <div class="flex-item">
+            <img src="media/kebab.png" alt="">
+            <label for="">Quantita
+                <input id="kebab" type="number">
+            </label>
+            <button onclick="getData('kebab')">BUY</button>
+        </div>
+        <div class="flex-item">
+            <img src="media/piadina.png" alt="">
+            <label for="">Quantita
+                <input id="piadina" type="number">
+            </label>
+            <button onclick="getData('piadina')">BUY</button>
+        </div>
+    </div>
+    
+    <script>
+        function getData(productName) {
+            return document.getElementById(productName).value;
+        }
+    </script>
+</body>
+</html>
