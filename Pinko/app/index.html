@@ -1,0 +1,334 @@
+<html>
+    <head>
+        <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+        <link rel="stylesheet" href="css/global.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="main">
+            <div class="grid-x">
+
+                <div class="cell breadCrumbs">
+                    <a href="#">Abbigliamento</a>
+                    >
+                    <a href="#">Abbigliamento</a>
+                </div>
+            </div>
+
+            <div class="grid-x">
+                <div class="cell medium-3 grid-cetegory">
+                    <span>Filtra i risultati per:</span>
+                     <!-- Bottone per le Taglie -->
+                    <div class="dress-container uppercase">  <!--DRESS CONTAINER-->
+                        <ul class="categry-1">
+                            <li class="uppercase">
+                                <a class="custom-link"  onclick="showCategory_1()" href="#">capospalla</a>
+                                <ul class="hidden" id="category-1">
+                                    <li>
+                                        <a href="#">piumini</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">cappotti</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">giacche di pelle</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">gilet, kaban, trench</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="categry-1">
+                            <li>
+                                <a class="uppercase custom-link" id="category-2" href="#">giacca</a>
+                            </li>
+                        </ul>
+                        <ul class="categry-1">
+                            <li>
+                                <a class="uppercase custom-link" onclick="showCategory_3()" href="#">abiti</a>
+                                <ul class="hidden" id="category-3">
+                                    <li>
+                                        <a href="#">piumini</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">cappotti</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">giacche di pelle</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="categry-1">
+                            <li>
+                                <a class="uppercase custom-link" onclick="showCategory_4()" href="#">maglieria</a>
+                                <ul class="hidden" id="category-4">
+                                    <li>
+                                        <a href="#">cappotti</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">giacche di pelle</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">gilet, kaban, trench</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="categry-1">
+                            <li>
+                                <a class="uppercase custom-link" onclick="showCategory_5()" href="#">camicie e bluse</a>
+                                <ul class="hidden" id="category-5">
+                                    <li>
+                                        <a href="#">piumini</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">cappotti</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="categry-1">
+                            <li>
+                                <a class="uppercase custom-link" onclick="showCategory_6()" href="#">topwear</a>
+                                <ul class="hidden" id="category-6">
+                                    <li>
+                                        <a href="#">piumini</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">cappotti</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">giacche di pelle</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="categry-1">
+                            <li>
+                                <a class="uppercase custom-link" onclick="showCategory_7()" href="#">pantaloni</a>
+                                <ul class="hidden" id="category-7">
+                                    <li>
+                                        <a href="#">piumini</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">cappotti</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="categry-1">
+                            <li>
+                                <a class="uppercase custom-link" href="#">jeans</a>
+                            </li>
+                        </ul>
+                        <ul class="categry-1">
+                            <li>
+                                <a class="uppercase custom-link"  onclick="showCategory_9()" href="#">gonne</a>
+                                <ul class="hidden" id="category-9">
+                                    <li>
+                                        <a href="#">piumini</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">cappotti</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">giacche di pelle</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="categry-10">
+                            <li>
+                                <a class="uppercase custom-link" id="category-10" href="#">pinko for treedom</a>
+                            </li>
+                        </ul>
+                        <ul class="categry-11">
+                            <li>
+                                <a class="uppercase custom-link" href="#">what's new</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="size-container">
+                        <label for="toggle" class="uppercase button">taglia</label> <!-- PROVA con la label-->
+                        <a class="custom-link"  href="#">TAGLIA</a>
+
+                        <input type="checkbox" class="hidden" id="toggle"> <!-- Input nascosto. serve per il Filter Button-->
+
+                      <!--  <a href="#" class="custom-link uppercase">taglia</a> -->
+                        <div class="grid-x size">
+                            <div class="cell small-4 medium-6">
+                                <label class="number-size">
+                                    <input type="checkbox" checked="checked">36
+                                </label>
+                            </div>
+                            <div class="cell small-4 medium-6">
+                                <label class="number-size">
+                                    <input type="checkbox" checked="checked">38
+                                </label>
+                            </div>
+                            <div class="cell small-4 medium-6">
+                                <label class="number-size">
+                                    <input type="checkbox" checked="checked">40
+                                </label>
+                            </div>
+                            <div class="cell small-4 medium-6">
+                                <label class="number-size">
+                                    <input type="checkbox" checked="checked">42
+                                </label>
+                            </div>
+                            <div class="cell small-4 medium-6">
+                                <label class="number-size">
+                                    <input type="checkbox" checked="checked">44
+                                </label>
+                            </div>
+                            <div class="cell small-4 medium-6">
+                                <label class="number-size">
+                                    <input type="checkbox" checked="checked">46
+                                </label>
+                            </div>
+                            <div class="cell small-4 medium-6">
+                                <label class="number-size">
+                                    <input type="checkbox" checked="checked">46N
+                                </label>
+                            </div>
+                            <div class="cell small-4 medium-6">
+                                <label class="number-size">
+                                    <input type="checkbox" checked="checked">L
+                                </label>
+                            </div>
+                            <div class="cell small-4 medium-6">
+                                <label class="number-size">
+                                    <input type="checkbox" checked="checked">M
+                                </label>
+                            </div>
+                            <div class="cell small-4 medium-6">
+                                <label class="number-size">
+                                    <input type="checkbox" checked="checked">S
+                                </label>
+                            </div>
+                            <div class="cell small-4 medium-6">
+                                <label class="number-size">
+                                    <input type="checkbox" checked="checked">XL
+                                </label>
+                            </div>
+                            <div class="cell small-4 medium-6">
+                                <label class="number-size">
+                                    <input type="checkbox" checked="checked">XS
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell medium-9">
+                    <div class="grid-x">
+                        <div class="cell text-right grid-header">
+                            <label class="custom-label" for="help">Ordina per:</label>
+                            <select class="custuom-select" name="" id="help">
+                                <option value="account">Seleziona un'operazione</option>
+                                <option value="azienda">prezzo dal piu alto al piu basso</option>
+                                <option value="ordine">prezzo dal piu basso al piu alto</option>
+                                <option value="privacy">I piu cercati</option>
+                                <option value="feedback">I piu venduti</option>
+                            </select>
+                        </div>
+                        <div class="cell grid-main">
+                            <div class="grid-x grid-margin-x grid-margin-y">
+                                <div class="product-card cell large-4 medium-6">
+                                    <img class="product-image" src="https://via.placeholder.com/350x450/854b4b/000000" alt="">
+                                    <img class="product-image-hover" src="https://via.placeholder.com/350x450/000000/ffffff" alt="">
+                                    <div class="space-div"></div>
+                                    <div class="product-name"><a href="#" class="product-name-link uppercase">CAPPOTTO CON INTARSIO E BORCHIETTE</a></div>
+                                    <div class="price">€ 450,00</div>
+                                </div>
+                                <div class="product-card cell large-4 medium-6">
+                                    <img class="product-image" src="https://via.placeholder.com/350x450/854b4b/000000" alt="">
+                                    <img class="product-image-hover" src="https://via.placeholder.com/350x450/000000/ffffff" alt="">
+                                    <div class="space-div"></div>
+                                    <div class="product-name"><a href="#" class="product-name-link uppercase">CAPPOTTO IN FAUX FUR ANIMALIER</a></div>
+                                    <div class="price">€ 450,00</div>
+                                </div>
+                                <div class="product-card cell large-4 medium-6">
+                                    <img class="product-image" src="https://via.placeholder.com/350x450/854b4b/000000" alt="">
+                                    <img class="product-image-hover" src="https://via.placeholder.com/350x450/000000/ffffff" alt="">
+                                    <div class="space-div"></div>
+                                    <div class="product-name"><a href="#" class="product-name-link uppercase">CAPPOTTO CON DISEGNO RESCA E CINTURA</a></div>
+                                    <div class="price">€ 450,00</div>
+                                </div>
+                                <div class="product-card cell large-4 medium-6">
+                                    <img class="product-image" src="https://via.placeholder.com/350x450/854b4b/000000" alt="">
+                                    <img class="product-image-hover" src="https://via.placeholder.com/350x450/000000/ffffff" alt="">
+                                    <div class="space-div"></div>
+                                    <div class="product-name"><a href="#" class="product-name-link uppercase">CAPPOTTO IN PANNO CON REVERS A COSTE</a></div>
+                                    <div class="price">€ 450,00</div>
+                                </div>
+                                <div class="product-card cell large-4 medium-6">
+                                    <img class="product-image" src="https://via.placeholder.com/350x450/854b4b/000000" alt="">
+                                    <img class="product-image-hover" src="https://via.placeholder.com/350x450/000000/ffffff" alt="">
+                                    <div class="space-div"></div>
+                                    <div class="product-name"><a href="#" class="product-name-link uppercase">PARKA IN GABARDINA CON CAPPUCCIO DI ECOFUR</a></div>
+                                    <div class="price">€ 450,00</div>
+                                </div>
+                                <div class="product-card cell large-4 medium-6">
+                                    <img class="product-image" src="https://via.placeholder.com/350x450/854b4b/000000" alt="">
+                                    <img class="product-image-hover" src="https://via.placeholder.com/350x450/000000/ffffff" alt="">
+                                    <div class="space-div"></div>
+                                    <div class="product-name"><a href="#" class="product-name-link uppercase">CAPPOTTO IN PANNO CON CINTURA</a></div>
+                                    <div class="price">€ 450,00</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="grid-x grid-preFooter">
+                                <div class="cell large-7 text-right">
+                                    <a href="#">
+                                        
+                                        <span class="up-arrow">^</span> <span class="uppercase">Torna in alto</span>  
+                                    </a>
+                                </div>
+                                <div class="cell large-5 text-right">
+                                    <label class="custom-label" for="help">Ordina per:</label>
+                                    <select class="custuom-select" name="" id="help">
+                                        <option value="account">Seleziona un'operazione</option>
+                                        <option value="azienda">prezzo dal piu alto al piu basso</option>
+                                        <option value="ordine">prezzo dal piu basso al piu alto</option>
+                                        <option value="privacy">I piu cercati</option>
+                                        <option value="feedback">I piu venduti</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+            function showCategory_1() {
+                document.getElementById("category-1").style.display = "block";
+            }
+            function showCategory_3 () {
+                document.getElementById("category-3").style.display = "block";
+            }
+            function showCategory_4() {
+                document.getElementById("category-4").style.display = "block";
+            }
+            function showCategory_5() {
+                document.getElementById("category-5").style.display = "block";
+            }
+            function showCategory_6() {
+                document.getElementById("category-6").style.display = "block";
+            }
+            function showCategory_7() {
+                document.getElementById("category-7").style.display = "block";
+            }
+            function showCategory_9() {
+                document.getElementById("category-9").style.display = "block";
+            }
+        </script>
+        </body>
+</html>

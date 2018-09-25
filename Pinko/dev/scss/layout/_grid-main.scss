@@ -1,0 +1,33 @@
+.product-card {
+    position: relative;
+
+    img {
+        transition: opacity .35s ease-out;
+    }
+    
+    .product-image-hover {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+        top: 0;
+        left: 0;
+    }
+
+    &:hover {
+        .product-image {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .product-image-hover {
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+}
+
+.price{
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 100;
+}

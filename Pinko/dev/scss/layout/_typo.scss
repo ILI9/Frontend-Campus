@@ -1,0 +1,41 @@
+$font-size-default: rem-calc(14);
+$font-size-small: rem-calc(12);
+$font-size-big: rem-calc(17);
+
+p, span {
+    font-size: $font-size-default;
+}
+
+.small{
+    font-size: $font-size-small;
+}
+
+.large{
+    font-size: $font-size-big;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.lowercase{
+    text-transform: lowercase;
+}
+
+.custom-link{
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.product-name-link{
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+}
+
+hr{
+    margin-right: 50px;
+}
