@@ -1,0 +1,89 @@
+
+.dado {
+    position: absolute;
+    opacity: 0;
+    width: 100px;
+    height: 100px;
+}
+
+input{
+    appearance: none;
+}
+
+.animation{
+    
+    background-color: red;
+    animation-name: dadoAnimation;
+    animation-duration: 3s;
+}
+
+@keyframes dadoAnimation {
+    0%   {
+        opacity: 1;
+        background-color:aquamarine;
+        bottom:0px;
+        transform: rotate(0);
+    }
+    25% {
+        bottom:100%;
+        transform: rotate(500deg);
+    }
+    99% {
+        opacity: 1;
+    }
+    100% {
+        background-color:rgb(249, 255, 127);;
+        bottom:0px;
+        transform: rotate(1000deg);
+        opacity: 0;
+    }
+}
+
+.dadoContainer{
+    position: relative;
+
+}
+
+
+
+.bottomBtn{
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+
+
+.mainContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: calc(100vh - 36.8px);
+}
+
+.child-1{
+    position: relative;
+    background-color: aquamarine;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.child-2{
+    background-color: rgb(249, 255, 127);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.resultContainer{
+    position: absolute;
+    bottom: 0;
+}
+
+.upButtons{
+    justify-items: center;
+}
+
+.playBtn{
+    width: 50%;
+}
