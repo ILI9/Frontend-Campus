@@ -16,15 +16,10 @@
 //     radius: Number 
 // }
 
-
 // const createSmallCircle = functionFactory(.....);
 // const createMediumCircle = functionFactory(.....);
 // const createBigCircle = functionFactory(.....);
 // ```
-
-
-
-
 
 function setup() {
     createCanvas(800, 600);
@@ -34,20 +29,10 @@ function setup() {
 
     //my clousure
     var functionFactory = function (x, y, radius){
-
-        if(radius < 25){
-            var createSmallCircle = function(circle){
-                ellipse(x, y, radius, radius);
-            }
-        }else if(radius > 25 && radius < 60){
-            var createMediumCircle = function(circle){
-                ellipse(x, y, radius, radius);
-            }
-        }else {
-            var createBigCircle = function(circle){
-                ellipse(x, y, radius, radius);
-            }
-        } 
+        var newEllipse = function(){
+            ellipse(x, y, radius, radius);
+        }
+        return newEllipse();
     }
 
     const createSmallCircle = functionFactory(35, 25, 15, 10);

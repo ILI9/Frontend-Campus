@@ -19,43 +19,33 @@ tutti i cerchi devono esser diversi e in posizioni diverse
 
 */
 
-
-
-
 function setup() {
-    createCanvas(640, 480);
+    createCanvas(800, 600);
     background(0);
 
     const size = 30;
 
-   //array vuoto
-    var arrayCerchi = [];
+    var emptyArray = [];
 
-
-    //funz che popola l'array con un oggetto
-    function createCircle(x, y, radius, radiu2){
-        var circle = {
-            x: x,
-            y: y,
-            radius: radius,
-            radiu2: radiu2
+    function yourCircle(x, y, radius1, radius2){
+        var cerhioILI = {
+            x       : x,
+            y       : y,
+            radius1 : radius1,
+            radius2 : radius2,
         }
-        arrayCerchi.push(circle);
+        return emptyArray.push(cerhioILI);
     }
-
-
-    //chiamarla 5 volte.
-    for(var i = 0; i<=5; i++){
-        createCircle(i*100, i*50, i*15, i*20);
-    }
-
-    console.log(arrayCerchi);
 
     for(var i = 0; i<= 5; i++){
-        ellipse(arrayCerchi[i].x, arrayCerchi[i].y, arrayCerchi[i].radius, arrayCerchi[i].radiu2);
-    } 
+        if (i < 3) {
+            yourCircle(i * 30, i * 30, i * 25, i * 25);    
+        } else {
+            yourCircle(i * 100, i * 20, i * 22, i * 22);    
+        }
+        ellipse(emptyArray[i].x, emptyArray[i].y, emptyArray[i].radius1, emptyArray[i].radius2);
+    }
 }
-
 
 
 

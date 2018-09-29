@@ -14,7 +14,7 @@ function draw(){
     // ellipse(100, 100, size, size);
 }
 
-//array buoto
+//array vuoto
 var arrayCerchi = [];
 //funz che popola l'array
 var creaCerchio = function(x, y, array){

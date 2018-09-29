@@ -8,7 +8,7 @@ const firstNum = arraySample[1];
 console.log(arraySample.length);
 
 //oggetti
-    //a diff degli array l'ordine non conta.
+//a diff degli array l'ordine non conta.
 const obj = {
     color: 'red',
     '1': 'uno',
