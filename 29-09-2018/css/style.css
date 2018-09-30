@@ -44,8 +44,6 @@ input{
 
 }
 
-
-
 .bottomBtn{
     height: 35%;
     display: flex;
@@ -53,14 +51,11 @@ input{
     align-items: flex-end;
 }
 
-
-
-
 .mainContainer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: calc(100vh - 36.8px);
+    height: calc(100vh - 68.8px);
 }
 
 .child-1{
@@ -80,10 +75,18 @@ input{
     bottom: 0;
 }
 
+.scoreResultA{
+    width: 10%;
+}
+
 .upButtons{
     justify-items: center;
 }
 
 .playBtn{
     width: 50%;
+}
+
+.container{
+    align-items: flex-end;
 }
