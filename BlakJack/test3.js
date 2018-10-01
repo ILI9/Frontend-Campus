@@ -60,6 +60,7 @@ checkWinner();
     ESERCIZIO ESEGUITO CON ANCHE L'HTML.
 */
 
+
 function rndCard() {
     return Math.floor((Math.random() * 10) + 1);
 }
@@ -72,12 +73,10 @@ function rightCard(Card){
         case 1:
             document.getElementById(Card).src = 'media/deck/one.png';
             value = newCard;
-
             break;
         case 2:
             document.getElementById(Card).src = 'media/deck/two.png';
             value = newCard;
-
             break;
         case 3:
             document.getElementById(Card).src = 'media/deck/three.png';
@@ -86,37 +85,30 @@ function rightCard(Card){
         case 4:
             document.getElementById(Card).src = 'media/deck/four.png';
             value = newCard;
-
             break;
         case 5:
             document.getElementById(Card).src = 'media/deck/five.png';
             value = newCard;
-
             break;
         case 6:
             document.getElementById(Card).src = 'media/deck/six.png';
             value = newCard;
-
             break;
         case 7:
             document.getElementById(Card).src = 'media/deck/seven.png';
             value = newCard;
-
             break;
         case 8:
             document.getElementById(Card).src = 'media/deck/eight.png';
             value = newCard;
-
             break;
         case 9:
             document.getElementById(Card).src = 'media/deck/nine.png';
             value = newCard;
-
             break;
         case 10:
             document.getElementById(Card).src = 'media/deck/ten.png';
             value = newCard;
-
             break;
     }
     return value;

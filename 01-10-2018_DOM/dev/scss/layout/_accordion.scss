@@ -1,0 +1,50 @@
+.accordion{
+    width: 90%;
+    max-width: 40em;
+    margin: 2em auto;  
+    
+    &__header {
+        transition: background-color 250ms ease;
+        background-color: lighten($light-grey , 15%);
+
+        &:hover {
+            background-color: lighten($light-grey , 10%);
+        }
+
+        a {
+            display: block;
+            padding: 0.5em 1em;
+            font-size: 0.75em;
+            vertical-align: middle;
+            color: $black;
+
+            svg {
+                vertical-align: bottom;
+                transition: transform 250ms ease;
+            }
+        }
+
+        &.is-active {
+            a {
+                svg {
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+    
+    &__panel {
+        max-height: 0;
+        overflow: hidden;
+        background-color: $white;
+        transition: max-height 250ms ease;
+
+        &.is-active {
+            max-height: 15em;
+        }
+    }
+
+    &__paragraph {
+        padding: 1em;
+    }
+}
