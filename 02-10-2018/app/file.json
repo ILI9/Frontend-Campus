@@ -1,0 +1,43 @@
+{
+    "class": {
+        "persons": [
+            {
+                "name": "serena",
+                "eta": 27
+            }, {
+                "name": "nico",
+                "eta": 27
+            }, {
+                "name": "giorgio",
+                "eta": 27
+            }, {
+                "name": "ilr",
+                "eta": 27
+            }, {
+                "name": "matteo",
+                "eta": 27
+            }, {
+                "name": "francesco",
+                "eta": 27
+            }, {
+                "name": "ivan",
+                "eta": 27
+            }
+        ],
+        "computers": [
+            {
+                "name": "dell"
+            }, {
+                "name": "dell"
+            }, {
+                "name": "dell"
+            }, {
+                "name": "dell"
+            }, {
+                "name": "dell"
+            },{
+                "name": "asus"
+            }
+        ]
+    }
+}

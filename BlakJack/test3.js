@@ -132,6 +132,7 @@ function turnCard(playerOrDealer, firstCard, secondCard, result){
        } else {
             playerResult.innerText = sum;
        }
+       
     });
     console.log(value);
     return value;
@@ -145,10 +146,12 @@ var playerTurnCard = turnCard('playerTurnCard', 'playerFirsCard', 'playerSecondC
 //function that checks the winner.
 function checkWinner2() {
     document.getElementById('check-winner').addEventListener('click', function(e){
+        console.log("GIRO");
         if (dealerTurnCard >= playerTurnCard){
-            console.log(dealerCard + 'sono il dealer ed ho vint figlio di puttana');
+            console.log(dealerTurnCard + 'sono il dealer ed ho vint figlio di puttana');
         } else {
             console.log('iuhuuuuuuu');
         }
     })
 }
+checkWinner2();

@@ -1,0 +1,20 @@
+   
+   .room{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+
+    
+    .riga{
+        flex: 1;
+        padding-top: 2em;
+        border: 1px solid blue;
+        text-align: center;
+
+        // .col {
+        //     padding: 0.75em;
+        //     border: 1px solid blue;
+        //     flex: 1;
+        // }
+    }   
+    }

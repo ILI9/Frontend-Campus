@@ -1,0 +1,24 @@
+header{
+    background-color: rgb(98, 98, 98);
+    color: white;
+}
+
+.product{
+
+    &__image{
+        margin-top: 0;
+        padding: 0px 200px 200px 200px;
+    }
+    
+    &__information{
+        padding-left: 70px;
+        padding-top: 70px;
+    }
+    &__name{ // product__information__name
+            padding-top: 10px;
+            padding-bottom: 20px;
+    }
+    &__color{
+        padding-bottom: 10px;
+    }
+}
