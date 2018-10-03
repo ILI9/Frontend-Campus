@@ -10,12 +10,11 @@ fetch('file.json')
    return response.json();
  })
  .then(function(myJson) {
-  //  console.log(JSON.stringify(myJson));
+  console.log(JSON.stringify(myJson));
 
    document.addEventListener('end-fetch', function(e){
 
-     var persons = [];
-     var cell = document.querySelectorAll('.col');
+     var dataJson = myJson.productList;
 
     // for(var i = 0; i < myJson.productList.persons.length; i++) {
     //      persons.push(myJson.productList.persons[i].name); 
@@ -23,6 +22,21 @@ fetch('file.json')
     // console.log(persons);
     console.log(myJson.productList[0].name);
 
+    const sizeCheck = document.querySelectorAll('input[name=checkBoxSize]');
+
+    //convert a NodeList to an Array.
+    const nodeToArray = Array.from(sizeCheck);
+
+    nodeToArray.forEach(el => {
+      el.addEventListener('click', function(e) {
+        if(el.value === "S"){
+          var myElem = document.querySelector('')
+          dataJson[i]
+        }
+      })
+    })
+
+    
     
     // for (var i = 0; i < persons.length; i++){
     //   //create a new DIV
