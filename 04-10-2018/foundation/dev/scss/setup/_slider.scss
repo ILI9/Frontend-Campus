@@ -1,0 +1,24 @@
+body {
+    background-color: #fafafa;
+    color: #454545;
+}
+
+.slider{
+    width: 90%;
+    max-width: 100%;
+    margin: 120px auto; 
+
+    .slide{
+        background-color: #ffffff;
+        padding: 30px;
+        border: 1px solid #ccc;
+        border-radius: 1px; 
+    }
+
+    .slick-prev,
+    .slick-next {
+        
+        &:before {
+            color: #454545;
+        }
+   }
